@@ -1,8 +1,5 @@
-Here's the corrected and properly formatted README.md for your project:
-
 # Economic Growth Analysis Project
 
-![Project Workflow](outputs/workflow_diagram.png)
 
 ## 📌 Overview
 This project analyzes the relationship between **GDP growth** and **education spending/investment** using data from the World Bank. It integrates **Python, STATA, EViews, R, and MATLAB** to demonstrate various analytical techniques.
