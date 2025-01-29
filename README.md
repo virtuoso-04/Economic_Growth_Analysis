@@ -1,9 +1,11 @@
+Here's the corrected and properly formatted README.md for your project:
+
 # Economic Growth Analysis Project
 
-![Project Workflow](outputs/workflow_diagram.png) *(Optional: Add a workflow diagram if you create one)*
+![Project Workflow](outputs/workflow_diagram.png)
 
 ## 📌 Overview
-This project analyzes the relationship between **GDP growth** and **education spending/investment** using data from the World Bank. It integrates **Python, STATA, EViews, R, and MATLAB** to demonstrate end-to-end data analysis, econometric modeling, forecasting, and policy simulations.
+This project analyzes the relationship between **GDP growth** and **education spending/investment** using data from the World Bank. It integrates **Python, STATA, EViews, R, and MATLAB** to demonstrate various analytical techniques.
 
 ## 🛠️ Tools Used
 | Tool       | Purpose                          |
@@ -26,72 +28,69 @@ This project analyzes the relationship between **GDP growth** and **education sp
    ```bash
    git clone https://github.com/yourusername/Economic_Growth_Analysis.git
    cd Economic_Growth_Analysis
+   ```
 
-Install dependencies:
+2. **Install dependencies**:
 
-Python:
+   **Python**:
+   ```bash
+   pip install pandas
+   ```
 
-bash
+   **R**:
+   ```R
+   install.packages(c("ggplot2", "dplyr"))
+   ```
 
-pip install pandas
-R:
+   **STATA/EViews/MATLAB**: Licensed software required.
 
-R
+3. **Download datasets**:
+   Place `gdp_data.csv` and `education_data.csv` in the `data/raw/` folder.
 
-install.packages(c("ggplot2", "dplyr"))
-STATA/EViews/MATLAB: Licensed software required.
+## 🧮 Usage
+1. **Data Cleaning (Python)**
+   Run the Python script to clean and merge data:
+   ```bash
+   python code/python/data_cleaning.py
+   ```
+   Output: `data/processed/merged_data.csv`
 
-Download datasets:
+2. **Regression Analysis (STATA)**
+   Execute the STATA script:
+   ```stata
+   do code/stata/regression.do
+   ```
+   Output: `outputs/regression_results.rtf`
 
-Place gdp_data.csv and education_data.csv in the data/raw/ folder.
+3. **Forecasting (EViews)**
+   Open `code/eviews/forecasting.prg` in EViews and run the script to generate GDP forecasts.
+   Output: `outputs/gdp_forecast.csv`
 
-🧮 Usage
-1. Data Cleaning (Python)
-Run the Python script to clean and merge data:
+4. **Visualization (R)**
+   Run the R script to create plots:
+   ```R
+   source("code/r/visualization.R")
+   ```
+   Output: `outputs/gdp_vs_education.png`
 
-bash
+5. **Policy Simulation (MATLAB)**
+   Execute the MATLAB script:
+   ```matlab
+   run('code/matlab/simulation.m')
+   ```
+   Output: `outputs/policy_simulation.png`
 
-python code/python/data_cleaning.py
-Output: data/processed/merged_data.csv
+## 📊 Results
+| File                     | Description                         |
+|--------------------------|-------------------------------------|
+| `regression_results.rtf` | STATA panel regression results      |
+| `gdp_forecast.csv`       | EViews ARIMA forecasts              |
+| `gdp_vs_education.png`   | R visualization (GDP vs. Education) |
+| `policy_simulation.png`  | MATLAB policy impact simulation     |
 
-2. Regression Analysis (STATA)
-Execute the STATA script:
+## 📂 Project Structure
 
-stata
-
-do code/stata/regression.do
-Output: outputs/regression_results.rtf
-
-3. Forecasting (EViews)
-Open code/eviews/forecasting.prg in EViews.
-
-Run the script to generate GDP forecasts.
-Output: outputs/gdp_forecast.csv
-
-4. Visualization (R)
-Run the R script to create plots:
-
-R
-
-source("code/r/visualization.R")
-Output: outputs/gdp_vs_education.png
-
-5. Policy Simulation (MATLAB)
-Execute the MATLAB script:
-
-matlab
-
-run('code/matlab/simulation.m')
-Output: outputs/policy_simulation.png
-
-📊 Results
-File	Description
-regression_results.rtf	STATA panel regression results
-gdp_forecast.csv	EViews ARIMA forecasts
-gdp_vs_education.png	R visualization (GDP vs. Education)
-policy_simulation.png	MATLAB policy impact simulation
-📂 Project Structure
-
+```
 Economic_Growth_Analysis/
 ├── data/
 │   ├── raw/                   # Raw datasets
@@ -104,9 +103,11 @@ Economic_Growth_Analysis/
 │   └── matlab/                # MATLAB simulations
 ├── outputs/                   # Results (graphs, tables)
 └── README.md                  # Project documentation
-🔍 Future Extensions
-Add investment data for deeper analysis.
+```
 
-Replace ARIMA with machine learning models (Python/R) for forecasting.
+## 🔍 Future Extensions
+- Add investment data for deeper analysis.
+- Replace ARIMA with machine learning models (Python/R) for forecasting.
+- Build an interactive dashboard using R Shiny or Python Dash.
 
-Build an interactive dashboard using R Shiny or Python Dash.
+You can update the README.md file with the above content in your repository.
